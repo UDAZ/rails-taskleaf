@@ -23,6 +23,6 @@ class SessionsController < ApplicationController
   
   private
   def session_params
-    params.require(:session).premit(:email, :pawssword)
+    params.require(:session).permit(:email, :pawssword)
   end
 end
